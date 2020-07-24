@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <script src="src/index.js"></script>
+  </head>
+
+  <body>
+    <div id="hero" class="hero">
+			<h1 class="title">To Do List</h1>
+			<div id="todoMenu1" class="todo-menu-1">
+				<button
+					id="toggleAll"
+					class="toggle-all"
+					aria-label="Toggle all to do tasks"
+				>
+					<span class="rotate">&#x276F;</span>
+				</button>
+				<button
+					id="formhide"
+					class="form-hide"
+				>
+				-Hide form
+				</button>
+				<form id="hiding" style="display:none">
+					<label for="title">Task to be done </label>
+					<input type="text" id="title" name="title" placeholder="Name of the Task"/><br />
+					<label for="user">Who should do the task </label>
+					<input type="text" id="user" name="description" placeholder="Should do the task done by you?" /><br />
+					<label for="description">Description</label>
+					 <textarea type="text" id="description" rows="4" cols="50" placeholder="Short notes of the task"></textarea><br /><br />					
+					 <button id="addTodoTextInput" type="submit" value="Add Task">Add the Task</button>
+				</form>
+				<button id="toadd"  value="Adding Tasks" />+Create New Tasks </button>
+			</div>
+			<input id="search-text" class="search-text" placeholder="&#x1F50D;Search your tasks.." name="search">
+		</div>	
+			<div id="todoMenu2" class="todo-menu-2">
+				<span
+					id="todosLeft"
+					class="todos-left"
+				></span>
+				<div id="todoMenu2Buttons" class="todo-menu-2-buttons">
+					<button
+						id="showAllTodos"
+						class="menu-2-button active"
+					>
+						All
+					</button>
+					<button
+						id="showUncompletedTodos"
+						class="menu-2-button"
+						aria-label="Show active to do tasks"
+					>
+						Active
+					</button>
+					<button
+						id="showCompletedTodos"
+						class="menu-2-button"
+						aria-label="Show completed to do tasks"
+					>
+						Completed
+					</button>
+				</div>
+				<button
+					id="deleteCompletedButton"
+					class="delete-completed-button"
+				>
+					Clear completed
+				</button>
+			</div>
+      <div id="todoApp" class="todo-app">
+       
+        <ul id="todos" class="todos"></ul>
+       
+      </div>
+    
+  </body>
+</html>
