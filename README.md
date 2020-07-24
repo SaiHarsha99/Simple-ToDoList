@@ -2,6 +2,8 @@
 
 The App is completely built using HTML/CSS/JS
 
+You can verify this url for the assignment - https://1vbkh.csb.app/
+
 An user can Add/Delete/Modify the existing tasks.
 Data can be feteched form Local Storage also.
 
