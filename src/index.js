@@ -6,13 +6,13 @@ var todo = [];
 document.getElementById("toadd").addEventListener("click", function() {
   document.getElementById("toadd").style.display = "none";
   document.getElementById("hiding").style.display = "block";
-  document.getElementById("formhide").style.display = "block";
+  document.getElementById("formhide").style.display = "inline";
 });
 
 document.getElementById("formhide").addEventListener("click", function() {
   document.getElementById("hiding").style.display = "none";
   document.getElementById("formhide").style.display = "none";
-  document.getElementById("toadd").style.display = "block";
+  document.getElementById("toadd").style.display = "";
 });
 
 var todoList = {
@@ -130,7 +130,6 @@ var view = {
       var todoLi = document.createElement("li");
       var checkbox = this.createCheckbox(todo);
       var todoLabel = this.createTodoLabel(todo);
-      var deleteButton = this.createDeleteButton();
 
       todoLi.className = "todo";
 
@@ -345,7 +344,7 @@ var view = {
     addTodoTextInput.addEventListener("click", function(event) {
       event.preventDefault();
       document.getElementById("hiding").style.display = "none";
-      document.getElementById("toadd").style.display = "block";
+      document.getElementById("toadd").style.display = "";
       document.getElementById("formhide").style.display = "none";
       var inputTitle = document.getElementById("title").value,
         inputUser = document.getElementById("user").value,
